@@ -13,20 +13,20 @@ CREATE TABLE wf_employee (
 );
 
 CREATE TABLE wf_branch (
-	branch_id int IDENTITY(101,1),
-	branch_address varchar(100),
+	branch_id int IDENTITY(101,1) NOT NULL,
+	branch_address varchar(100) NOT NULL,
 	CONSTRAINT pk_wf_branch PRIMARY KEY(branch_id)
 );
 
 CREATE TABLE wf_customer (
-	customer_id int,
-	first_name varchar(30),
-	last_name varchar(30),
+	customer_id int NOT NULL,
+	first_name varchar(30) NOT NULL,
+	last_name varchar(30) NOT NULL,
 	email varchar(50),
 	phone varchar(15),
-	ssn char(11),
+	ssn char(11) NOT NULL,
 	credit_score smallint,
-	income_yearly bigint
+	income_yearly bigint NOT NULL,
 	CONSTRAINT pk_wf_customer_id PRIMARY KEY(customer_id),
 	CONSTRAINT check_credit_score CHECK(credit_score >= 300 AND credit_score <= 850)
 );
