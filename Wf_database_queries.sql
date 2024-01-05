@@ -26,7 +26,6 @@ ORDER BY branch_id ASC;
 -- Update Customer with id 19936 email to merlinemaccorley01@gmail.com --
 UPDATE wf_customer SET email = 'merlinemaccorley01@gmail.com'
 WHERE customer_id = 19936;
--- 
 
 -- Update customer with the first name Josephine, last name Whetson current credit score from 595 to 633 --
 UPDATE wf_customer SET credit_score = 633
