@@ -269,7 +269,7 @@ CASE
 	WHEN credit_score > 579 AND credit_score <= 669 THEN 'This customer has fair credit score'
 	WHEN credit_score > 669 AND credit_score <= 739 THEN 'This customer has good credit score'
 	WHEN credit_score > 739 AND credit_score <= 799 THEN 'This customer has very good credit score'
-	WHEN credit_score > 799 AND credit_score <= 850 THEN 'This customer has Exceptional good credit score'
+	WHEN credit_score > 799 AND credit_score <= 850 THEN 'This customer has Exceptional credit score'
 	ELSE 'this credit score does not fall into the FICO Score range'
 END AS credit_score_check
 FROM wf_customer
