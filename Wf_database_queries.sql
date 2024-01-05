@@ -340,12 +340,3 @@ END AS credit_score_check
 FROM wf_customer
 ORDER BY credit_score ASC;
 EXEC case_credit_score;
-
-
-
-SELECT * FROM wf_account ORDER BY balance ASC;
-SELECT * FROM wf_customer
-SELECT * FROM wf_loans
-SELECT * FROM wf_employee
-SELECT * FROM wf_transaction
-SELECT * FROM wf_branch
