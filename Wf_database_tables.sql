@@ -1,7 +1,7 @@
 -- TABLE CREATION --
 CREATE TABLE wf_employee (
 	employee_id varchar(30) NOT NULL,
-	branch_id int NOT NULL,
+	branch_id tinyint NOT NULL,
 	first_name varchar(30) NOT NULL,
 	last_name varchar(30) NOT NULL,
 	birth_date date NOT NULL,
