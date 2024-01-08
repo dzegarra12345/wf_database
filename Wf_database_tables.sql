@@ -13,7 +13,7 @@ CREATE TABLE wf_employee (
 );
 
 CREATE TABLE wf_branch (
-	branch_id int IDENTITY(101,1) NOT NULL,
+	branch_id tinyint IDENTITY(101,1) NOT NULL,
 	branch_address varchar(100) NOT NULL,
 	CONSTRAINT pk_wf_branch PRIMARY KEY(branch_id)
 );
@@ -33,7 +33,7 @@ CREATE TABLE wf_customer (
 
 CREATE TABLE wf_account (
 	account_id int NOT NULL,
-	branch_id int NOT NULL,
+	branch_id tinyint NOT NULL,
 	customer_id int NOT NULL,
 	account_type char(8) NOT NULL,
 	balance decimal(10,2) NOT NULL,
